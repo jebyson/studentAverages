@@ -9,10 +9,8 @@ public class Main {
         Scanner sf = new Scanner(new File("/Users/je565/IdeaProjects/studentAverages/src/com/company/StudentScores.in"));
 
         int maxIndx = -1;
-        int i;
-        int sum;
-        int cnt;
-        int average;
+        double i, sum, cnt, average;
+        int roundedAverage;
 
         String [] text = new String[1000];
 
@@ -32,14 +30,16 @@ public class Main {
             cnt = 0;
             sum = 0;
             average = 0;
+            roundedAverage = 0;
             while(sc.hasNextInt())
             {
                 cnt++;
                 i = sc.nextInt();
                 sum += i;
                 average = sum/cnt;
+                roundedAverage = (int)(Math.ceil(average));
             }
-            total[b] = name + ", average = " + average;
+            total[b] = name + ", average = " + roundedAverage;
         }
 
         for(int c = 0; c <= maxIndx; c++)
@@ -53,6 +53,11 @@ public class Main {
         {
             System.out.println(text[a]);
         }
+         */
+
+        /*
+        roundedAverageFinal = (int)(roundedAverage);
+        roundedAverageFinal = 0;
          */
     }
 }
