@@ -37,7 +37,7 @@ public class Main {
                 i = sc.nextInt();
                 sum += i;
                 average = sum/cnt;
-                roundedAverage = (int)(Math.ceil(average));
+                roundedAverage = (int)(Math.round(average));
             }
             total[b] = name + ", average = " + roundedAverage;
         }
@@ -46,7 +46,6 @@ public class Main {
         {
             System.out.println(total[c]);
         }
-
 
         /*
         for(int a = 0; a <= maxIndx; a++)
